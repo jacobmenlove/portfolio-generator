@@ -27,3 +27,8 @@ const questions = [
     message: 'Enter your GitHub URL:',
   }
 ];
+
+inquirer.prompt(questions).then((answers) => {
+  console.log('\n📋 Your player profile:');
+  console.log(answers);
+});
