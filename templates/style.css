@@ -1,12 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #0057b8;
-    }
-    a {
-      color: #0077cc;
-    }
+  background-color: #000000;
+  color: #00FF00;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #111111;
+  border: 1px solid #00FF00;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00FF00;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+.card a {
+  color: #00FF00;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: #99ff99;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+}

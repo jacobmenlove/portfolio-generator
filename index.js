@@ -19,11 +19,13 @@ function generateHTML(answers) {
   <link rel="stylesheet" href="../templates/style.css">
 </head>
 <body>
-  <h1>Hello, I'm ${answers.name}!</h1>
-  <p><strong>Location:</strong> ${answers.location}</p>
-  <p><strong>Bio:</strong> ${answers.bio}</p>
-  <p><strong>LinkedIn:</strong> <a href="${answers.linkedin}">${answers.linkedin}</a></p>
-  <p><strong>GitHub:</strong> <a href="${answers.github}">${answers.github}</a></p>
+  <div class="card">
+    <h1>Hello, I'm ${answers.name}!</h1>
+    <p><strong>Location:</strong> ${answers.location}</p>
+    <p><strong>Bio:</strong> ${answers.bio}</p>
+    <p><strong>LinkedIn:</strong> <a href="${answers.linkedin}">${answers.linkedin}</a></p>
+    <p><strong>GitHub:</strong> <a href="${answers.github}">${answers.github}</a></p>
+  </div>
 </body>
 </html>
 `;
